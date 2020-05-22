@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>RedmineTextFormattingTextile - Redmine</title>
+	<meta name="description" content="Redmine" />
+	<meta name="keywords" content="issue,bug,tracker" />
+	<meta content="authenticity_token" name="csrf-param" />
+	<meta content="z8oIpoWKAs4Q1rDvNpl9N3mAJ+bRiDkWyWLr92Y5slQ=" name="csrf-token" />
+	<link rel='shortcut icon' href='/favicon.ico?1322400152' />
+	<link href="/stylesheets/jquery/jquery-ui-1.9.2.css?1357736700" media="all" rel="stylesheet" type="text/css" />
+	<link href="/themes/redmine/stylesheets/application.css?1361112893" media="all" rel="stylesheet" type="text/css" />
+
+	<script src="/javascripts/jquery-1.8.3-ui-1.9.2-ujs-2.0.3.js?1357736700" type="text/javascript"></script>
+	<script src="/javascripts/application.js?1396109606" type="text/javascript"></script>
+
+
+</head>
+
+<body class="theme-Redmine project-redmine controller-wiki action-show">
+	<div id="wrapper">
+		<div id="wrapper2">
+			<div id="wrapper3">			
+
+				<div id="header">				
+
+					<h1>Redmine</h1>
+
+					<div id="main" class="">						
+
+						<div id="content">
+
+							<div class="contextual">
+
+								<a name="Redmine-links"></a>
+								<h3>Redmine links<a href="#Redmine-links" class="wiki-anchor">&para;</a></h3>
+								<p>
+									<p>Redmine allows hyperlinking between resources (wiki pages, issues, documents...)
+										from anywhere text formatting is used.</p>
+									<p>
+										Alt 009 - Hor  Tab
+										Alt 0171 - «
+										Alt 0187 - »
+									</p>
+
+									<p>Commit links:</p>
+									<li>commit:01234567</li>
+
+									<div id="wiki-content" class="d-flex flex-column flex-md-row">
+										<div id="wiki-body" class="mt-4 flex-auto min-width-0 gollum-markdown-content instapaper_body">
+											<div class="markdown-body">
+												<p>Once <em>installed</em>, DMSF act as project module.
+													To use it, you must check DMSF in the projects settings under modules.</p>
+												<p>Once <em>enabled</em>, the search options are extended by a "Dmsf files" checkbox, that allows you to
+													search DMSF content.</p>
+												<h2>
+													<a id="user-content-link-to-dmsf-files" class="anchor" href="#link-to-dmsf-files"
+														aria-hidden="true"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16"
+															height="16" aria-hidden="true">
+															<path fill-rule="evenodd"
+																d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+															</path>
+														</svg></a>Link to DMSF files</h2>
+												<ul>
+													<li>{{dmsf(17)}} link to file with id 17</li>
+													<li>{{dmsf(17,File)}} link to file with id 17 with link text "File"</li>
+													<li>{{dmsf(17,File,10)}} link to file with id 17 with link text "File" and link pointing to revision 10
+													</li>
+												</ul>
+												<p>The DMSF file/revision id can be found in the link for file/revision download.</p>
+												<h2>
+													<a id="user-content-link-to-dmsf-folders" class="anchor" href="#link-to-dmsf-folders"
+														aria-hidden="true"><svg class="octicon octicon-link" viewbox="0 0 16 16" version="1.1" width="16"
+															height="16" aria-hidden="true">
+															<path fill-rule="evenodd"
+																d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+															</path>
+														</svg></a>Link to DMSF folders</h2>
+												<ul>
+													<li>{{dmsff(5)}} link to folder with id 5</li>
+													<li>{{dmsff(5,Folder)}} link to folder with id 5 with link text "Folder"</li>
+												</ul>
+												<p>Just like with files, folder ids can be found in the links for folder opening.</p>
+												<h2>
+													<a id="user-content-publish-dmsf-syntax-in-wiki-syntax-help" class="anchor"
+														href="#publish-dmsf-syntax-in-wiki-syntax-help" aria-hidden="true"><svg class="octicon octicon-link"
+															viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+															<path fill-rule="evenodd"
+																d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+															</path>
+														</svg></a>Publish DMSF syntax in wiki syntax help</h2>
+												<p>Include the following in file &lt;redmine_root&gt;/public/help/wiki_syntax_detailed.html</p>
+												<div class="highlight highlight-text-html-basic">
+													<pre>&lt;<span class="pl-ent">ul</span>&gt;
+									 &lt;<span class="pl-ent">li</span>&gt;
+									  DMSF:
+									    &lt;<span class="pl-ent">ul</span>&gt;
+									      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;{{dmsf(17)}}&lt;/<span class="pl-ent">strong</span>&gt; (link to file with id 17)&lt;/<span class="pl-ent">li</span>&gt;
+									      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;{{dmsf(17,File)}}&lt;/<span class="pl-ent">strong</span>&gt; (link to file with id 17 with link text "File")&lt;/<span class="pl-ent">li</span>&gt;
+									      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;{{dmsf(17,File,10)}}&lt;/<span class="pl-ent">strong</span>&gt; (link to file with id 17 with link text "File", pointing to rev 10)&lt;/<span class="pl-ent">li</span>&gt;
+									      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;{{dmsff(5)}}&lt;/<span class="pl-ent">strong</span>&gt; (link to folder with id 5)&lt;/<span class="pl-ent">li</span>&gt;
+									      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;{{dmsff(5,Folder)}}&lt;/<span class="pl-ent">strong</span>&gt; (link to folder with id 5 with link text "Folder")&lt;/<span class="pl-ent">li</span>&gt;
+									    &lt;/<span class="pl-ent">ul</span>&gt;
+									    DMSF file/revision id can be found in link for file/revision download.&lt;<span class="pl-ent">br</span> /&gt;
+									    DMSF folder id can be found in link for folder opening.
+									 &lt;/<span class="pl-ent">li</span>&gt;
+									&lt;/<span class="pl-ent">ul</span>&gt;</pre>
+												</div>
+									
+											</div>
+									
+										</div>
+
+									<p>Wiki links:</p>
+
+									<ul>
+										<li><strong>&#91;&#91;Guide&#93;&#93;</strong> displays a link to the page named
+											'Guide': <a href="/projects/redmine/wiki/Guide" class="wiki-page">Guide</a>
+										</li>
+										<li><strong>&#91;&#91;Guide#further-reading&#93;&#93;</strong> takes you to the
+											anchor "further-reading". Headings get automatically assigned anchors so
+											that you can refer to them: <a
+												href="/projects/redmine/wiki/Guide#further-reading"
+												class="wiki-page">Guide</a></li>
+										<li><strong>&#91;&#91;Guide|User manual&#93;&#93;</strong> displays a link to
+											the same page but with different text: <a
+												href="/projects/redmine/wiki/Guide" class="wiki-page">User manual</a>
+										</li>
+										<li><strong>&#91;&#91;Guide#User-guide|User guide&#93;&#93;</strong> displays a
+											link to the header on the same page with different text: <a
+												href="/projects/redmine/wiki/Guide#User-guide" class="wiki-page">User
+												guide</a></li>
+									</ul>
+
+
+									<p>You can also link to pages of another project's wiki (using the project
+										identifier):</p>
+
+
+									<ul>
+										<li><strong>&#91;&#91;sandbox:some page&#93;&#93;</strong> displays a link to
+											the page named 'Some page' of the Sandbox wiki</li>
+										<li><strong>&#91;&#91;sandbox:&#93;&#93;</strong> displays a link to the Sandbox
+											wiki main page</li>
+									</ul>
+
+
+									<p>Wiki links are displayed in red if the page doesn't exist yet, eg: <a
+											href="/projects/redmine/wiki/Nonexistent_page?parent=RedmineTextFormattingRedmineLinks"
+											class="wiki-page new">Nonexistent page</a>.</p>																
+
+
+									<ul>
+										<li>Documents:
+
+											<ul>
+												<li><strong>document#17</strong> (link to document with id 17)</li>
+												<li><strong>document:Greetings</strong> (link to the document with title
+													"Greetings")</li>
+												<li><strong>document:"Some document"</strong> (double quotes can be used
+													when document title contains spaces)</li>
+												<li><strong>sandbox:document:"Some document"</strong> (link to a
+													document with title "Some document" in project identifier "sandbox")
+												</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>Versions:
+
+											<ul>
+												<li><strong>version#3</strong> (link to version with id 3)</li>
+												<li><strong>version:1.0.0</strong> (link to version named "1.0.0")</li>
+												<li><strong>version:"1.0 beta 2"</strong> (double quotes can be used
+													when version name contains spaces)</li>
+												<li><strong>sandbox:version:1.0.0</strong> (link to version "1.0.0" in
+													the project identifier "sandbox")</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>Attachments:
+
+											<ul>
+												<li><strong>attachment:file.zip</strong> (link to the attachment of the
+													current object named file.zip)</li>
+												<li><strong>attachment:"file name.zip"</strong> (double quotes can be
+													used when the filename contains non word characters)</li>
+												<li>For now, attachments of the current object can be referenced only
+													(if you're on an issue, it's possible to reference attachments of
+													this issue only)</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>Changesets:
+
+											<ul>
+												<li><strong>r758</strong> (link to a changeset, displays <a
+														href="/projects/redmine/repository/revisions/758"
+														class="changeset"
+														title="Search engine now only searches objects the user is allowed to view.">r758</a>)
+												</li>
+												<li><strong>commit:c6f4d0fd</strong> (link to a changeset with a
+													non-numeric hash)</li>
+												<li><strong>svn1|r758</strong> (link to a changeset of a specific
+													repository, for projects with multiple repositories)</li>
+												<li><strong>commit:hg|c6f4d0fd</strong> (link to a changeset with a
+													non-numeric hash of a specific repository)</li>
+												<li><strong>sandbox:r758</strong> (link to a changeset of another
+													project)</li>
+												<li><strong>sandbox:commit:c6f4d0fd</strong> (link to a changeset with a
+													non-numeric hash of another project identifier)</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>Repository files:
+
+											<ul>
+												<li><strong>source:some/file</strong> (link to the file located at
+													/some/file in the project's repository)</li>
+												<li><strong>source:"some file"</strong> (link to the file with non word
+													characters in the path)</li>
+												<li><strong>source:some/file@52</strong> (link to the file's revision
+													52)</li>
+												<li><strong>source:some/file@master</strong> (link to the file in branch
+													<em>master</em>)</li>
+												<li><strong>source:some/file#L120</strong> (link to line 120 of the
+													file)</li>
+												<li><strong>source:some/file@52#L120</strong> (link to line 120 of the
+													file's revision 52)</li>
+												<li><strong>source:repo_identifier|some/file</strong> (link to a file of
+													a specific repository, for projects with multiple repositories)</li>
+												<li><strong>sandbox:source:some/file</strong> (link to the file in the
+													project identifier "sandbox")</li>
+												<li><strong>export:some/file</strong> (force the download of the file)
+												</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>Forums:
+
+											<ul>
+												<li><strong>forum#2</strong> (link to forum with id 2)</li>
+												<li><strong>forum:Discussion</strong> (link to forum with name
+													"Discussion")</li>
+												<li><strong>forum:"Help and more"</strong> (double quotes can be used
+													when forum name contains spaces)</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>Forum messages:
+
+											<ul>
+												<li><strong>message#1218</strong> (link to message with id 1218)</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>News items
+
+											<ul>
+												<li><strong>news#1</strong> (link to news item with id 1)</li>
+												<li><strong>news:Greetings</strong> (link to news item with name
+													"Greetings")</li>
+												<li><strong>news:"eCookbook first release !"</strong> (double quotes can
+													be used when news item name contains spaces)</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>Projects:
+
+											<ul>
+												<li><strong>project#3</strong> (link to project with id 3)</li>
+												<li><strong>project:someproject</strong> (link to project with name
+													"someproject")</li>
+												<li><strong>project:"Multiple words project"</strong> (double quotes can
+													be used when project name contains spaces)</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul>
+										<li>Users:
+
+											<ul>
+												<li><strong>user:login</strong> (Link to user with login username, if
+													username is an email you may have this issue <a href="/issues/26443"
+														class="issue tracker-1 status-5 priority-4 priority-default closed"
+														title="User link syntax (user:login) doesn&#x27;t work for logins consisting of an email adress (Closed)">#26443</a>)
+												</li>
+											</ul>
+										</li>
+									</ul>
+
+
+									<p>Escaping:</p>
+
+
+									<ul>
+										<li>You can prevent Redmine links from being parsed by preceding them with an
+											exclamation mark: !</li>
+									</ul>
+								</p>
+
+
+								<a name="External-links"></a>
+								<h3>External links<a href="#External-links" class="wiki-anchor">&para;</a></h3>
+
+
+								URLs (http, https, ftp and ftps) are automatically turned into clickable links:
+								<ul>
+									<li><strong>http&#58;//www.redmine.org</strong> -- External link to the redmine
+										website: <a class="external"
+											href="http://www.redmine.org">http://www.redmine.org</a></li>
+								</ul>
+
+
+								URLs can also use different text than the link itself:
+								<ul>
+									<li><strong>"Redmine web site"&#58;http&#58;//www.redmine.org</strong> -- External
+										link with different text: <a href="http://www.redmine.org"
+											class="external">Redmine web site</a></li>
+									<li><strong>!http://www.redmine.org/attachments/7069/Redmine_logo.png(Redmine web
+											site)!:http://www.redmine.org</strong> -- External image with a title that
+										links to an URL:</li>
+								</ul>
+
+
+								<p style="text-align:center;"><a href="http://www.redmine.org"><img
+											src="http://www.redmine.org/attachments/7069/Redmine_logo.png"
+											title="Redmine web site" alt="Redmine web site" /></a></p>
+
+
+								File URI can be used to link UNC path:
+								<ul>
+									<li><strong>"\\server\share$"&#58;file&#58;/////server/share%24</strong> -- File URI
+										showing UNC path: <a
+											href="file://///server/share%24">\\server\share$</a><br />You should <a
+											href="http://www.w3schools.com/tags/ref_urlencode.asp" class="external">URL
+											Encodings</a> for special characters like empty space, $, á, é, í, ó, ú,
+										etc.</li>
+								</ul>
+
+
+								<a name="Email-addresses"></a>
+								<h3>Email addresses<a href="#Email-addresses" class="wiki-anchor">&para;</a></h3>
+
+
+								<p>Email addresses are automatically turned into clickable links:</p>
+
+
+								<ul>
+									<li><strong>someone&#64;foo.bar</strong> -- Link to an email address: <a
+											class="email" href="mailto:someone@foo.bar">someone@foo.bar</a></li>
+									<li><strong>"Email someone"&#58;mailto&#58;someone&#64;foo.bar</strong> -- Email
+										link with different text: <a href="mailto:someone@foo.bar">Email someone</a>
+									</li>
+								</ul>
+
+
+								More complex email instructions can be added to an email link. A default subject,
+								default body and CC information can be defined. Note that spaces in any of these fields
+								need to be replaced with the code %20.
+								<ul>
+									<li><strong>"Email webmaster and
+											admin"&#58;mailto&#58;webmaster&#64;foo.bar?cc=admin&#64;foo.bar</strong> --
+										Email to webmaster, CC admin: <a
+											href="mailto:webmaster@foo.bar?cc=admin@foo.bar">Email webmaster and
+											admin</a></li>
+									<li><strong>"Email someone for
+											help"&#58;mailto&#58;someone&#64;foo.bar?subject=Website%20Help</strong> --
+										Email link with the subject "Website Help": <a
+											href="mailto:someone@foo.bar?subject=Website%20Help">Email someone for
+											help</a></li>
+									<li><strong>"Email someone for
+											help"&#58;mailto&#58;someone&#64;foo.bar?subject=Website%20Help&#38;body=My%20problem%20is%20</strong>
+										-- Email link with the subject "Website Help" and a default body: <a
+											href="mailto:someone@foo.bar?subject=Website%20Help&#38;body=My%20problem%20is%20">My
+											problem is</a></li>
+								</ul>
+
+
+								<a name="Text-formatting"></a>
+								<h2>Text formatting<a href="#Text-formatting" class="wiki-anchor">&para;</a></h2>
+
+
+								<p>For things such as headlines, bold, tables, lists, Redmine supports <a
+										href="http://en.wikipedia.org/wiki/Textile_%28markup_language%29"
+										class="external">Textile syntax</a>. See <a class="external"
+										href="http://redcloth.org/hobix.com/textile/">http://redcloth.org/hobix.com/textile/</a>
+									for information on using any of these features. A few samples are included below,
+									but the engine is capable of much more of that.</p>
+
+
+								<a name="Acronym"></a>
+								<h3>Acronym<a href="#Acronym" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre>
+JPL(Jean-Philippe Lang)
+</pre>
+
+								<p>displays:</p>
+
+
+								<p><abbr title="Jean-Philippe Lang">JPL</abbr></p>
+
+
+								<a name="Font-style"></a>
+								<h3>Font style<a href="#Font-style" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre><code>* *bold*
+* _italic_
+* *_bold italic_*
+* +underline+
+* -strike-through-
+* Plain ^superscript^
+* Plain ~subscript~
+* @inline monospace@
+* normal *bold* _italic_ normal;E=mc ^2^
+* normal&lt;notextile&gt;&lt;/notextile&gt;*bold*&lt;notextile&gt;&lt;/notextile&gt;_italic_&lt;notextile&gt;&lt;/notextile&gt;normal;E=mc&lt;notextile&gt;&lt;/notextile&gt;^2^
+* Escaping: &lt;notextile&gt;*bold* _italic_ @inlinemono@&lt;/notextile&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Alternative using HTML-codes: &amp;#42;bold&amp;#42; &amp;#95;italic&amp;#95; &amp;#64;inlinemono&amp;#64;
+* &lt;pre&gt;*some lines*      some "link":http://www.redmine.org&lt;/pre&gt;
+* &lt;pre&gt;&lt;notextile&gt;&lt;/notextile&gt;*some lines*      some "link":http://www.redmine.org&lt;/pre&gt;<br /></code></pre>
+
+								<p>displays:</p>
+
+
+								<ul>
+									<li><strong>bold</strong></li>
+									<li><em>italic</em></li>
+									<li><strong><em>bold italic</em></strong></li>
+									<li><ins>underline</ins></li>
+									<li><del>strike-through</del></li>
+									<li>Plain <sup>superscript</sup></li>
+									<li>Plain <sub>subscript</sub></li>
+									<li><code>inline monospace</code></li>
+									<li>normal <strong>bold</strong> <em>italic</em> normal;E=mc <sup>2</sup></li>
+									<li>normal<strong>bold</strong><em>italic</em>normal;E=mc<sup>2</sup></li>
+									<li>Escaping: *bold* _italic_ @inlinemono@ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										Alternative using HTML-codes: &#42;bold&#42; &#95;italic&#95;
+										&#64;inlinemono&#64;</li>
+									<li>
+										<pre>*some lines*      some "link":http://www.redmine.org</pre>
+									</li>
+									<li>
+										<pre><strong>some lines</strong>      some <a href="http://www.redmine.org" class="external">link</a></pre>
+									</li>
+								</ul>
+
+
+								<a name="Color"></a>
+								<h3>Color<a href="#Color" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre><code>* %{color:red}red% %{color:green}green% %{color:yellow}yellow% %{color:#82B6E1}blue'ish%
+* %{color:red}red%&lt;notextile&gt;&lt;/notextile&gt;%{color:green}green%&lt;notextile&gt;&lt;/notextile&gt;%{color:yellow}yellow%&lt;notextile&gt;&lt;/notextile&gt;%{color:#82B6E1}blue'ish%
+* %{background:lightgreen}Lightgreen Background% %{background:yellow}Yellow Background%
+* %{background:lightgreen}Lightgreen Background%&lt;notextile&gt;&lt;/notextile&gt;%{background:yellow}Yellow Background%
+</code></pre>
+
+								<p>displays:</p>
+
+
+								<ul>
+									<li><span style="color:red;">red</span> <span style="color:green;">green</span>
+										<span style="color:yellow;">yellow</span> <span
+											style="color:#82B6E1;">blue'ish</span></li>
+									<li><span style="color:red;">red</span><span style="color:green;">green</span><span
+											style="color:yellow;">yellow</span><span
+											style="color:#82B6E1;">blue'ish</span></li>
+									<li><span style="background:lightgreen;">Lightgreen Background</span> <span
+											style="background:yellow;">Yellow Background</span></li>
+									<li><span style="background:lightgreen;">Lightgreen Background</span><span
+											style="background:yellow;">Yellow Background</span></li>
+								</ul>
+
+
+								<a name="Inline-images"></a>
+								<h3>Inline images<a href="#Inline-images" class="wiki-anchor">&para;</a></h3>
+
+
+								<ul>
+									<li><strong>&#33;image_url&#33;</strong> displays an image located at image_url
+										(textile syntax)</li>
+									<li><strong>&#33;>image_url&#33;</strong> right floating image</li>
+									<li><strong>&#33;image_url(Image title)&#33;</strong> displays an image with an
+										alt/title attribute</li>
+									<li><strong>&#33;image_url&#33;:URL</strong> displays an image located at image_url
+										with link URL added</li>
+								</ul>
+
+
+								<p>If you have an image attached to your wiki page, it can be displayed inline using its
+									filename: <strong>&#33;attached_image.png&#33;</strong></p>
+
+
+								<p>You can also apply a CSS style to the image in the same ways as styling SPANs. The
+									code <strong>&#33;{width: 100%}attached_image.png&#33;</strong> will make the image
+									adjusts to the parent's width.</p>
+
+
+								<a name="Headings"></a>
+								<h3>Headings<a href="#Headings" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre><code>h1. Heading
+
+h2. Subheading
+
+h3. Subheading
+</code></pre>
+
+								<p>Redmine assigns an anchor to each of those headings thus you can link to them with
+									"#Heading", "#Subheading" and so forth.</p>
+
+
+								<a name="Paragraphs"></a>
+								<h3>Paragraphs<a href="#Paragraphs" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre><code>p. left aligned
+
+p(. left ident 1em
+
+p((. left ident 2em
+as well as for following lines
+
+p&gt;. right aligned
+
+p)))&gt;. right ident 3em
+
+p=. This is centered paragraph.
+</code></pre>
+
+								<p>displays;</p>
+
+
+								<p>left aligned</p>
+
+
+								<p style="padding-left:1em;">left ident 1em</p>
+
+
+								<p style="padding-left:2em;">left ident 2em<br />as well as for following lines</p>
+
+
+								<p style="text-align:right;">right aligned</p>
+
+
+								<p style="padding-right:3em;text-align:right;">right ident 3em</p>
+
+
+								<p style="text-align:center;">This is centered paragraph.</p>
+
+
+								<a name="Horizontal-rule"></a>
+								<h3>Horizontal rule<a href="#Horizontal-rule" class="wiki-anchor">&para;</a></h3>
+
+
+								<p><code>----</code></p>
+
+
+								<p>displays:</p>
+
+
+								<hr />
+
+
+								<a name="Preformatted-Text"></a>
+								<h3>Preformatted Text<a href="#Preformatted-Text" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre> &lt;pre&gt;*Your text won't become bold*&lt;/pre&gt; </pre>
+
+								<p>displays:</p>
+
+
+								<pre> *Your text won't become bold* </pre>
+
+								<a name="Blockquotes"></a>
+								<h3>Blockquotes<a href="#Blockquotes" class="wiki-anchor">&para;</a></h3>
+
+
+								<p>Start the paragraph with <strong>bq.</strong>:</p>
+
+
+								<pre><code>bq. Rails is a full-stack framework for developing database-backed web applications according to the Model-View-Control pattern.
+To go live, all you need to add is a database and a web server.
+</code></pre>
+
+								<p>displays:</p>
+
+
+								<blockquote>
+									<p>Rails is a full-stack framework for developing database-backed web applications
+										according to the Model-View-Control pattern.<br />To go live, all you need to
+										add is a database and a web server.</p>
+								</blockquote>
+
+
+								<p>You can also use > at the beginning of each line and stack them for nested quotes:
+								</p>
+
+
+								<pre>
+&gt;&gt; Rails is a full-stack framework for developing database-backed web applications according to the Model-View-Control pattern.
+&gt;&gt; To go live, all you need to add is a database and a web server.
+&gt; Great!
+</pre>
+
+								<p>displays:</p>
+
+
+								<blockquote>
+									<blockquote>
+
+										<p>Rails is a full-stack framework for developing database-backed web
+											applications according to the Model-View-Control pattern.<br />To go live,
+											all you need to add is a database and a web server.</p>
+
+
+									</blockquote>
+
+									<p>Great!</p>
+
+
+								</blockquote>
+
+								<a name="Unordered-lists"></a>
+								<h3>Unordered lists<a href="#Unordered-lists" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre>
+* Item 1
+* Item 2
+** Item 21
+** Item 22
+* Item 3
+</pre>
+
+								<p>displays:</p>
+
+
+								<ul>
+									<li>Item 1</li>
+									<li>Item 2
+										<ul>
+											<li>Item 21</li>
+											<li>Item 22</li>
+										</ul>
+									</li>
+									<li>Item 3</li>
+								</ul>
+
+
+								<a name="Ordered-lists"></a>
+								<h3>Ordered lists<a href="#Ordered-lists" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre>
+# Item 1
+# Item 2
+# Item 3
+## Item 3.1
+## Item 3.2
+</pre>
+
+								<p>displays:</p>
+
+
+								<ol>
+									<li>Item 1</li>
+									<li>Item 2</li>
+									<li>Item 3
+										<ol>
+											<li>Item 3.1</li>
+											<li>Item 3.2</li>
+										</ol>
+									</li>
+								</ol>
+
+
+								<a name="Tables"></a>
+								<h3>Tables<a href="#Tables" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre>
+|_.UserID      |_.Name          |_.Group     |_. attribute list   |
+|Starting with | a              |   simple   |row                 |
+|\3=.IT                                      |&lt;. align left       |
+|1             |Artur Pirozhkov |/2.Users    |&gt;. align right      |
+|2             |Vasya Rogov     |=. center   |
+|3             |John Smith      |Admin
+                                 (root)      |^. valign top       |
+|4             |-               |Nobody
+                                 (anonymous) |~. valign bottom    |
+</pre>
+
+								<p>displays (all multiple spaces are replaced by 1 space):</p>
+
+
+								<table>
+									<tr>
+										<th>UserID </th>
+										<th>Name </th>
+										<th>Group </th>
+										<th>attribute list </th>
+									</tr>
+									<tr>
+										<td>Starting with </td>
+										<td> a </td>
+										<td> simple </td>
+										<td>row </td>
+									</tr>
+									<tr>
+										<td style="text-align:center;" colspan="3">IT </td>
+										<td style="text-align:left;">align left </td>
+									</tr>
+									<tr>
+										<td>1 </td>
+										<td>Artur Pirozhkov </td>
+										<td rowspan="2">Users </td>
+										<td style="text-align:right;">align right </td>
+									</tr>
+									<tr>
+										<td>2 </td>
+										<td>Vasya Rogov </td>
+										<td style="text-align:center;">center </td>
+									</tr>
+									<tr>
+										<td>3 </td>
+										<td>John Smith </td>
+										<td>Admin<br /> (root) </td>
+										<td style="vertical-align:top;">valign top </td>
+									</tr>
+									<tr>
+										<td>4 </td>
+										<td>- </td>
+										<td>Nobody<br /> (anonymous) </td>
+										<td style="vertical-align:bottom;">valign bottom </td>
+									</tr>
+								</table>
+
+
+
+
+								<p>If you want to include pipe characters inside your table (e.g. for Wiki links), you
+									need to prevent textile from interpreting them:</p>
+
+
+								<table>
+									<tr>
+										<th>Input </th>
+										<th>Output</th>
+									</tr>
+									<tr>
+										<td><strong>&lt;notextile&gt;|&lt;/notextile&gt;</strong></td>
+										<td>|</td>
+									</tr>
+								</table>
+
+
+
+
+								<p>If you want to specify the width of the table, you need to put
+									<strong>table{width:100%}.</strong> just before your table definition:</p>
+
+
+								<pre>
+table{width:100%}.
+| This table will use
+all horizontal space |
+</pre>
+
+								<p>This way the table will extend to the whole page width ...</p>
+
+
+								<table style="width:100%;">
+									<tr>
+										<td> This table will use<br />all horizontal space </td>
+									</tr>
+								</table>
+
+
+
+
+								<p>... compared with the standard width:</p>
+
+
+								<table>
+									<tr>
+										<td> This table will use<br />only the required space </td>
+									</tr>
+								</table>
+
+
+
+
+								<a name="Table-of-content"></a>
+								<h3>Table of content<a href="#Table-of-content" class="wiki-anchor">&para;</a></h3>
+
+
+								<pre><code>{{toc}} =&gt; left aligned toc
+{{&gt;toc}} =&gt; right aligned toc
+</code></pre>
+
+								<p>Please keep in mind, that the toc-tag needs an empty line above and underneath it and
+									no other text before and after it.</p>
+
+
+								<p>Example:</p>
+
+
+								<pre><code>
+h1. headLineOne
+
+h2. something
+
+{{toc}}
+
+h2. something more
+</code></pre>
+
+								<a name="Macros"></a>
+								<h2>Macros<a href="#Macros" class="wiki-anchor">&para;</a></h2>
+
+
+								<p>Redmine includes a macros system that lets you add custom functions to insert dynamic
+									content in formatted text. You can learn about writing your own macros in <a
+										href="/projects/redmine/wiki/RedmineMacros" class="wiki-page">RedmineMacros</a>.
+									Redmine also includes a few builtin macros:</p>
+
+
+								<p>
+									<dl>
+										<dt><code>hello_world</code></dt>
+										<dd>
+											<p>Sample macro.</p>
+										</dd>
+										<dt><code>macro_list</code></dt>
+										<dd>
+											<p>Displays a list of all available macros, including description if
+												available.</p>
+										</dd>
+										<dt><code>child_pages</code></dt>
+										<dd>
+											<p>Displays a list of child pages. With no argument, it displays the child
+												pages of the current wiki page. Examples:</p>
+
+
+											<pre><code>!{{child_pages}} -- can be used from a wiki page only
+!{{child_pages(depth=2)}} -- display 2 levels nesting only</code></pre>
+										</dd>
+										<dt><code>include</code></dt>
+										<dd>
+											<p>Include a wiki page. Example:</p>
+
+
+											<pre><code>!{{include(Foo)}}</code></pre>
+
+
+											<p>or to include a page of a specific project wiki:</p>
+
+
+											<pre><code>!{{include(projectname:Foo)}}</code></pre>
+										</dd>
+										<dt><code>collapse</code></dt>
+										<dd>
+											<p>Inserts of collapsed block of text. Example:</p>
+
+
+											<pre><code>{{collapse(View details...)
+This is a block of text that is collapsed by default.
+It can be expanded by clicking a link.
+}}</code></pre>
+										</dd>
+										<dt><code>thumbnail</code></dt>
+										<dd>
+											<p>Displays a clickable thumbnail of an attached image. Examples:</p>
+
+
+											<pre>{{thumbnail(image.png)}}
+{{thumbnail(image.png, size=300, title=Thumbnail)}}</pre>
+										</dd>
+										<dt><code>sample_macro</code></dt>
+										<dd>
+											<p>Sample macro</p>
+										</dd>
+									</dl>
+								</p>
+
+
+								<a name="Code-highlighting"></a>
+								<h2>Code highlighting<a href="#Code-highlighting" class="wiki-anchor">&para;</a></h2>
+
+
+								<p>Default code highlightment relies on <a href="http://rouge.jneen.net/"
+										class="external">Rouge</a>, a syntax highlighting library written in pure Ruby.
+									It supports many commonly used languages such as <strong>c</strong>,
+									<strong>cpp</strong> (c++), <strong>csharp</strong> (c#, cs), <strong>css</strong>,
+									<strong>diff</strong> (patch, udiff), <strong>go</strong> (golang),
+									<strong>groovy</strong>, <strong>html</strong>, <strong>java</strong>,
+									<strong>javascript</strong> (js), <strong>kotlin</strong>,
+									<strong>objective_c</strong> (objc), <strong>perl</strong> (pl),
+									<strong>php</strong>, <strong>python</strong> (py), <strong>r</strong>,
+									<strong>ruby</strong> (rb), <strong>sass</strong>, <strong>scala</strong>,
+									<strong>shell</strong> (bash, zsh, ksh, sh), <strong>sql</strong>,
+									<strong>swift</strong>, <strong>xml</strong> and <strong>yaml</strong> (yml)
+									languages, where the names inside parentheses are aliases. Please refer to <a
+										href="/projects/redmine/wiki/RedmineCodeHighlightingLanguages"
+										class="wiki-page">RedmineCodeHighlightingLanguages</a> for the full list of
+									supported languages.</p>
+
+
+								<p>You can highlight code in your wiki page using this syntax:</p>
+
+
+								<pre><code>&lt;pre&gt;&lt;code class="ruby"&gt;
+  Place your code here.
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+								<p>Example:</p>
+
+
+								<pre><code class="ruby syntaxhl"><span class="CodeRay"><span class="comment"># The Greeter class</span>
+<span class="keyword">class</span> <span class="class">Greeter</span>
+  <span class="keyword">def</span> <span class="function">initialize</span>(name)
+    <span class="instance-variable">@name</span> = name.capitalize
+  <span class="keyword">end</span>
+
+  <span class="keyword">def</span> <span class="function">salute</span>
+    puts <span class="string"><span class="delimiter">&quot;</span><span class="content">Hello </span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@name</span><span class="inline-delimiter">}</span></span><span class="content">!</span><span class="delimiter">&quot;</span></span> 
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</span></code></pre>
+
+								<a name="Styling-text-using-CSS"></a>
+								<h2>Styling text using CSS<a href="#Styling-text-using-CSS"
+										class="wiki-anchor">&para;</a></h2>
+
+
+								<p>Textile can style text using CSS. Examples as follows:</p>
+
+
+								<pre>
+Three primary colors of light are %{color: #f00}red%, %{color: #0f0}green% and %{color: #00f}blue%.
+
+p{border: solid 1px #000; padding: 0.5em;}. The quick brown fox jumps over the lazy dog.
+
+table{width: 100%}.
+|={width: 30%; background-color: #aaf;}. column 1 |={width: 70%}. column 2 |
+</pre>
+
+								<p>displays:</p>
+
+
+								<p>Three primary colors of light are <span style="color: #f00;">red</span>, <span
+										style="color: #0f0;">green</span> and <span style="color: #00f;">blue</span>.
+								</p>
+
+
+								<p style="border: solid 1px #000;padding: 0.5em;">The quick brown fox jumps over the
+									lazy dog.</p>
+
+
+								<table style="width: 100%;">
+									<tr>
+										<td
+											style="vertical-align:middle;width: 30%;background-color: #aaf;text-align:center;">
+											column 1 </td>
+										<td style="width: 70%;text-align:center;">column 2 </td>
+									</tr>
+								</table>
+
+
+
+
+								<a name="Allowed-CSS-properties"></a>
+								<h3>Allowed CSS properties<a href="#Allowed-CSS-properties"
+										class="wiki-anchor">&para;</a></h3>
+
+
+								<p>Redmine allows the following properties. Other properties are not allowed for
+									security reasons (see <a href="/projects/redmine/repository/revisions/2192"
+										class="changeset"
+										title="Disable textile inline styles to prevent XSS attacks (#2377).">r2192</a>).
+								</p>
+
+
+								<ul>
+									<li>background</li>
+									<li>background-*</li>
+									<li>border</li>
+									<li>border-*</li>
+									<li>color</li>
+									<li>float</li>
+									<li>font</li>
+									<li>font-*</li>
+									<li>height</li>
+									<li>margin</li>
+									<li>margin-*</li>
+									<li>max-height</li>
+									<li>max-width</li>
+									<li>min-height</li>
+									<li>min-width</li>
+									<li>padding</li>
+									<li>padding-*</li>
+									<li>text</li>
+									<li>text-*</li>
+									<li>width</li>
+								</ul>								
+							</div>
+
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+				</div>			
+				
+			</div>
+		</div>
+
+</body>
+
+</html>
