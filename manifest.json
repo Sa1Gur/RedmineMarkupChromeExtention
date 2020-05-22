@@ -8,7 +8,5 @@
         "default_icon": "tab-icon.png",  
         "default_title": "Redmine markup helper",
         "default_popup": "popup.html"
-    },
-// "chrome_url_overrides" : {  "newtab": "newtab.html" },
- "permissions": ["activeTab"]
+    }
 }
